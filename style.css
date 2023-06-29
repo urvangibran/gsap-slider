@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #D5D5D5;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+.gallery {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h1 {
+  color: white;
+}
+
+.cards {
+	position: absolute;
+	width: 18rem;
+	height: 24rem;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cards li {
+	list-style: none;
+	width: 18rem;
+	height: 24rem;
+	text-align: center;
+	line-height: 18rem;
+	font-size: 2rem;
+	font-family: sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+
+}
+
+li > img {
+    width: 18rem;
+    height: 24rem;
+    border-radius: 0.8rem;
+}
+
+.actions {
+	position: absolute; 
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn {
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  background-color: #F5C519;
+  color: black;
+  margin: 0px 20px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: #f4d35e;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
